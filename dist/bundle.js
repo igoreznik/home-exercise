@@ -86,14 +86,81 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/file-loader/dist/cjs.js!./src/sass/style.css":
+/*!*******************************************************************!*\
+  !*** ./node_modules/file-loader/dist/cjs.js!./src/sass/style.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"e6525270ef9a6fd6c1582c70e1cb85c9.css\";\n\n//# sourceURL=webpack:///./src/sass/style.css?./node_modules/file-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/lib/addStyleUrl.js":
+/*!******************************************************!*\
+  !*** ./node_modules/style-loader/lib/addStyleUrl.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("/* WEBPACK VAR INJECTION */(function(module) {/*\r\n\tMIT License http://www.opensource.org/licenses/mit-license.php\r\n\tAuthor Tobias Koppers @sokra\r\n*/\r\n\r\nfunction addAttrs (element, attrs) {\r\n\tObject.keys(attrs).forEach(function (key) {\r\n\t\telement.setAttribute(key, attrs[key]);\r\n\t});\r\n}\r\n\r\nmodule.exports = function addStyleUrl (url, options) {\r\n\tif (typeof DEBUG !== \"undefined\" && DEBUG) {\r\n\t\tif (typeof document !== \"object\") throw new Error(\"The style-loader cannot be used in a non-browser environment\");\r\n\t}\r\n\r\n\toptions = options || {};\r\n\r\n\toptions.attrs = typeof options.attrs === \"object\" ? options.attrs : {};\r\n\r\n\toptions.hmr = typeof options.hmr === 'undefined' ? true : options.hmr;\r\n\r\n\tvar link = document.createElement(\"link\");\r\n\r\n\tlink.rel = \"stylesheet\";\r\n\tlink.type = \"text/css\";\r\n\tlink.href = url;\r\n\r\n\taddAttrs(link, options.attrs);\r\n\r\n\tvar head = document.getElementsByTagName(\"head\")[0];\r\n\r\n\thead.appendChild(link);\r\n\r\n\tif (options.hmr && module.hot) {\r\n\t\treturn function(url) {\r\n\t\t\tif(typeof url === \"string\") {\r\n\t\t\t\tlink.href = url;\r\n\t\t\t} else {\r\n\t\t\t\thead.removeChild(link);\r\n\t\t\t}\r\n\t\t};\r\n\t}\r\n}\r\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/module.js */ \"./node_modules/webpack/buildin/module.js\")(module)))\n\n//# sourceURL=webpack:///./node_modules/style-loader/lib/addStyleUrl.js?");
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/module.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/module.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = function(module) {\r\n\tif (!module.webpackPolyfill) {\r\n\t\tmodule.deprecate = function() {};\r\n\t\tmodule.paths = [];\r\n\t\t// module.parent = undefined by default\r\n\t\tif (!module.children) module.children = [];\r\n\t\tObject.defineProperty(module, \"loaded\", {\r\n\t\t\tenumerable: true,\r\n\t\t\tget: function() {\r\n\t\t\t\treturn module.l;\r\n\t\t\t}\r\n\t\t});\r\n\t\tObject.defineProperty(module, \"id\", {\r\n\t\t\tenumerable: true,\r\n\t\t\tget: function() {\r\n\t\t\t\treturn module.i;\r\n\t\t\t}\r\n\t\t});\r\n\t\tmodule.webpackPolyfill = 1;\r\n\t}\r\n\treturn module;\r\n};\r\n\n\n//# sourceURL=webpack:///(webpack)/buildin/module.js?");
+
+/***/ }),
+
 /***/ "./src/main.js":
 /*!*********************!*\
   !*** ./src/main.js ***!
   \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nError: Cannot find module '@babel/core'\\n babel-loader@8 requires Babel 7.x (the package '@babel/core'). If you'd like to use Babel 6.x ('babel-core'), you should install 'babel-loader@7'.\\n    at Function.Module._resolveFilename (module.js:555:15)\\n    at Function.Module._load (module.js:482:25)\\n    at Module.require (module.js:604:17)\\n    at require (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\v8-compile-cache\\\\v8-compile-cache.js:159:20)\\n    at Object.<anonymous> (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\babel-loader\\\\lib\\\\index.js:10:11)\\n    at Module._compile (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\v8-compile-cache\\\\v8-compile-cache.js:178:30)\\n    at Object.Module._extensions..js (module.js:671:10)\\n    at Module.load (module.js:573:32)\\n    at tryModuleLoad (module.js:513:12)\\n    at Function.Module._load (module.js:505:3)\\n    at Module.require (module.js:604:17)\\n    at require (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\v8-compile-cache\\\\v8-compile-cache.js:159:20)\\n    at loadLoader (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\loader-runner\\\\lib\\\\loadLoader.js:18:17)\\n    at iteratePitchingLoaders (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:169:2)\\n    at runLoaders (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:365:2)\\n    at NormalModule.doBuild (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:280:3)\\n    at NormalModule.build (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:427:15)\\n    at Compilation.buildModule (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:635:10)\\n    at moduleFactory.create (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:1021:12)\\n    at factory (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:405:6)\\n    at hooks.afterResolve.callAsync (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:155:13)\\n    at AsyncSeriesWaterfallHook.eval [as callAsync] (eval at create (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:32:10), <anonymous>:6:1)\\n    at AsyncSeriesWaterfallHook.lazyCompileHook (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\tapable\\\\lib\\\\Hook.js:154:20)\\n    at resolver (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:138:29)\\n    at process.nextTick (C:\\\\Users\\\\igoreznik\\\\WebstormProjects\\\\homeExercise\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:342:9)\\n    at process._tickCallback (internal/process/next_tick.js:150:11)\");\n\n//# sourceURL=webpack:///./src/main.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/style.css */ \"./src/sass/style.css\");\n/* harmony import */ var _sass_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sass_simplejoys_woff__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sass/simplejoys.woff */ \"./src/sass/simplejoys.woff\");\n/* harmony import */ var _sass_simplejoys_woff__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_simplejoys_woff__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _sass_Proxima_Nova_Alt_Regular_webfont_woff__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sass/Proxima Nova Alt Regular-webfont.woff */ \"./src/sass/Proxima Nova Alt Regular-webfont.woff\");\n/* harmony import */ var _sass_Proxima_Nova_Alt_Regular_webfont_woff__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sass_Proxima_Nova_Alt_Regular_webfont_woff__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n(function() {\r\n  const searchBtn = document.querySelector('.func-btn.search');\r\n  const closeBtn = document.querySelector('.closeBtn');\r\n  const closeBtnPopUp = document.querySelector('.closeBtn-popUp');\r\n  const FindBtn = document.querySelector('.submitSerachBtn');\r\n  const searchFieldJob = document.querySelector('.search-field-job');\r\n  const suggestItem = document.querySelectorAll('.suggestion-item');\r\n  const errorText = document.querySelector('.error-text');\r\n  const numRegex = new RegExp(\"^[0-9]+$\");\r\n  //const checkBoxList = document.querySelectorAll('.accordion-select');\r\n\r\n  searchBtn.addEventListener('click',() => {\r\n    document.querySelector('.search-field-container').classList.toggle('showField');\r\n    document.querySelector('.suggestion-list-wrapper').classList.remove('showSuggestionList');\r\n    searchFieldJob.value = '';\r\n  });\r\n\r\n  FindBtn.addEventListener('click', () => {\r\n    //let numResult = numRegex.match(searchFieldJob.value);\r\n    if (searchFieldJob.value == \"\" || searchFieldJob.value == null)\r\n    {\r\n      searchFieldJob.classList.add('errorStyle');\r\n      return false;\r\n\r\n    }\r\n    //if (numResult)\r\n    if (searchFieldJob.value.match(numRegex))\r\n    {\r\n      searchFieldJob.classList.add('errorStyle');\r\n      errorText.classList.add('showError');\r\n      errorText.innerText = 'You must enter only letters A-Z';\r\n    }\r\n\r\n    else{\r\n      document.querySelector('.search-field-container').classList.remove('showField');\r\n      document.querySelector('.suggestion-list-wrapper').classList.remove('showSuggestionList');\r\n      document.querySelector('.loader-wrapper').classList.add('showLoader');\r\n      searchFieldJob.classList.remove('errorStyle');\r\n      errorText.classList.remove('showError');\r\n      setTimeout(() => {\r\n        document.querySelector('.loader-wrapper').classList.remove('showLoader');\r\n        document.querySelector('.fadeBg').classList.add('showFadeBg');\r\n        document.querySelector('.results-popup-wrapper').classList.add('showPopUp');\r\n        document.querySelector('.results-text').innerText = `The value ${searchFieldJob.value} found 10 results`;\r\n      },1000);\r\n    }\r\n\r\n  });\r\n  closeBtnPopUp.addEventListener('click', () => {\r\n    document.querySelector('.results-popup-wrapper').classList.remove('showPopUp');\r\n    document.querySelector('.fadeBg').classList.remove('showFadeBg');\r\n  });\r\n  closeBtn.addEventListener('click', () => {\r\n    document.querySelector('.search-field-container').classList.remove('showField');\r\n    document.querySelector('.suggestion-list-wrapper').classList.remove('showSuggestionList');\r\n    searchFieldJob.value = '';\r\n  });\r\n\r\n  searchFieldJob.addEventListener('focus', () => {\r\n    document.querySelector('.fadeBg').classList.add('showFadeBg');\r\n    document.querySelector('.suggestion-list-wrapper').classList.add('showSuggestionList');\r\n    searchFieldJob.classList.remove('errorStyle');\r\n    errorText.classList.remove('showError');\r\n  });\r\n\r\n  searchFieldJob.addEventListener('input', () => {\r\n    document.querySelector('.suggestion-list-wrapper').classList.remove('showSuggestionList');\r\n  });\r\n\r\n  suggestItem.forEach((item) => {\r\n    item.addEventListener(\"click\", chooseSuggestion);\r\n  });\r\n\r\n\r\n  function chooseSuggestion(e) {\r\n    searchFieldJob.value = '';\r\n    searchFieldJob.value = e.target.innerText;\r\n    console.log(\"event\",e.target.innerText);\r\n    document.querySelector('.suggestion-list-wrapper').classList.remove('showSuggestionList');\r\n  }\r\n})();\r\n\n\n//# sourceURL=webpack:///./src/main.js?");
+
+/***/ }),
+
+/***/ "./src/sass/Proxima Nova Alt Regular-webfont.woff":
+/*!********************************************************!*\
+  !*** ./src/sass/Proxima Nova Alt Regular-webfont.woff ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"12ccd551e98723a35f926077a3dd40c4.woff\";\n\n//# sourceURL=webpack:///./src/sass/Proxima_Nova_Alt_Regular-webfont.woff?");
+
+/***/ }),
+
+/***/ "./src/sass/simplejoys.woff":
+/*!**********************************!*\
+  !*** ./src/sass/simplejoys.woff ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"2bdb6ce36533a6a2876a030e29e1a46e.woff\";\n\n//# sourceURL=webpack:///./src/sass/simplejoys.woff?");
+
+/***/ }),
+
+/***/ "./src/sass/style.css":
+/*!****************************!*\
+  !*** ./src/sass/style.css ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyleUrl.js */ \"./node_modules/style-loader/lib/addStyleUrl.js\")(\n  __webpack_require__(/*! !../../node_modules/file-loader/dist/cjs.js!./style.css */ \"./node_modules/file-loader/dist/cjs.js!./src/sass/style.css\")\n, {\"hmr\":true});\nif(false) {}\n\n//# sourceURL=webpack:///./src/sass/style.css?");
 
 /***/ })
 
