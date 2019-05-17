@@ -1,0 +1,181 @@
+.second-floor-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  .second-floor-header {
+    text-align: center;
+    margin: 107px 0 56px 0;
+    @include fontStyle($color-darkGray,ProximaNova,32px,0.5px,900,normal);
+  }
+
+  .accordion {
+    font-family: ProximaNova;
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+    @media screen and (max-width: 1536px) {
+      width: 100%;
+    }
+  }
+
+  .accordion-title,
+  .accordion-select  {
+    background-color: transparent;
+    color: $color-white;
+    width: 200px;
+    height: 80px;
+    font-size: 15px;
+    @media screen and (max-width: 1280px) {
+      width: 160px;
+    }
+    @media screen and (max-width: 900px) {
+      width: 120px;
+    }
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+  }
+
+  .accordion-content {
+    color: $color-black;
+    height: 80px;
+    @media screen and (max-width: 1280px) {
+      height: 100px;
+    }
+    @media screen and (max-width: 1024px) {
+      height: 150px;
+    }
+    @media screen and (max-width: 900px) {
+      height: 180px;
+    }
+    @media screen and (max-width: 700px) {
+      width: 80%;
+      height: 100%;
+    }
+  }
+
+  .accordion-title,
+  .accordion-select:checked ~ .accordion-content {
+    margin-right: 1px;
+    margin-bottom: 1px;
+  }
+  .accordion-select:checked ~ .accordion-title .benefit-text {
+    color: $color-darkerBlue;
+  }
+  .accordion-select:checked ~ .accordion-title svg .icon-g-stroke {
+    stroke: $color-darkerBlue;
+  }
+  .accordion-select:checked ~ .accordion-title svg .icon-g {
+    fill: $color-darkerBlue;
+  }
+  .accordion-select:checked ~ .accordion-content {
+    max-width: 400px;
+    text-align: left;
+    @media screen and (max-width: 1280px) {
+      max-width: 340px;
+    }
+    @media screen and (max-width: 1024px) {
+      max-width: 220px;
+    }
+    @media screen and (max-width: 900px) {
+      max-width: 200px;
+    }
+    @media screen and (max-width: 900px) {
+      max-width: 100%;
+    }
+    @media screen and (max-width: 700px) {
+      max-width: 100%;
+      max-height: 180px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .accordion > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    &:after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+  }
+
+  .accordion > ul > li,
+  .accordion-title {
+    position: relative;
+  }
+  .accordion > ul > li {
+    display: inline-block;
+    height: 80px;
+    @media screen and (max-width: 1280px) {
+      height: 100px;
+    }
+    @media screen and (max-width: 1024px) {
+      height: 150px;
+    }
+    @media screen and (max-width: 900px) {
+      height: 180px;
+    }
+    @media screen and (max-width: 700px) {
+      height: 100%;
+    }
+  }
+  .accordion-select {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .accordion-title {
+    display: inline-block;
+    vertical-align: top;
+    .icon-wrapper {
+      text-align: center;
+      .figElement {
+        width: 50px;
+        display: block;
+        margin: 0 auto;
+        @media screen and (max-width: 900px) {
+          width: 40px;
+        }
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+      .benefit-text {
+        color: $color-black;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.33;
+        margin-top: 6px;
+        @media screen and (max-width: 900px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .accordion-content {
+    position: relative;
+    display: inline-block;
+    max-width: 0;
+    overflow: hidden;
+    padding: 0;
+    @include fontStyle($color-black,ProximaNova,16px,normal,normal,1.56);
+    transition: max-width 0.3s ease-in-out;
+    @media screen and (max-width: 700px) {
+      max-width: 100%;
+      max-height: 0;
+      transition: max-height 0.3s ease-in-out;
+    }
+  }
+
+}

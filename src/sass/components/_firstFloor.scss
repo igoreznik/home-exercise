@@ -1,0 +1,220 @@
+
+.first-floor-wrapper {
+  position: relative;
+  @media screen and (max-width: 700px) {
+    overflow: hidden;
+  }
+  .first-floor-img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    @media screen and (max-width: 700px) {
+      width: 300vw;
+    }
+  }
+  .content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 56px 80px;
+    box-sizing: border-box;
+    @media screen and (max-width: 1440px) {
+      padding: 32px 80px;
+    }
+    @media screen and (max-width: 1280px) {
+      padding: 24px 80px;
+    }
+    @media screen and (max-width: 700px) {
+      padding: 14px;
+    }
+    .first-floor-content {
+      border-left: 18px solid $color-white;
+      border-top: 18px solid $color-white;
+      position: relative;
+      &:after {
+        position: absolute;
+        top:0;
+        border-right:18px solid $color-white;
+        height: 60%;
+        right: 0;
+        content: "";
+      }
+      &:before {
+        position: absolute;
+        bottom:0;
+        border-bottom: 18px solid $color-white;
+        left: 0;
+        content: "";
+        width: 80%;
+      }
+
+      .floor-header {
+        margin: 0;
+        padding-left: 88px;
+        &.first-header {
+          @include fontStyle($color-lightBlue,SimpleJoys,120px,-2.4px);
+          padding-top: 114px;
+          @media screen and (max-width: 1440px) {
+            padding-top: 80px;
+            font-size: 100px;
+          }
+          @media screen and (max-width: 1280px) {
+            padding-top: 32px;
+            font-size: 80px;
+          }
+          @media screen and (max-width: 1023px) {
+            font-size: 65px;
+          }
+          @media screen and (max-width: 900px) {
+            font-size: 50px;
+            padding-top: 12px;
+          }
+          @media screen and (max-width: 700px) {
+            padding-top: 12px;
+            padding-left: 12px;
+          }
+        }
+        &.second-header {
+          @include fontStyle($color-white,ProximaNova,63px,normal,900);
+          @media screen and (max-width: 1280px) {
+            font-size: 55px;
+          }
+          @media screen and (max-width: 1023px) {
+            font-size: 40px;
+          }
+          @media screen and (max-width: 900px) {
+            font-size: 30px;
+          }
+          @media screen and (max-width: 700px) {
+            padding-left: 12px;
+          }
+        }
+      }
+      .find-job-wrapper {
+        padding-left: 88px;
+        padding-bottom: 150px;
+        padding-top: 60px;
+        display: inline-block;
+        @media screen and (max-width: 1280px) {
+          padding-bottom: 80px;
+          width: 80%;
+          text-align: center;
+          padding-top: 28px;
+        }
+        @media screen and (max-width: 1023px) {
+          padding-bottom: 60px;
+        }
+        @media screen and (max-width: 900px) {
+          padding-bottom: 30px;
+        }
+        @media screen and (max-width: 700px) {
+          padding-left: 12px;
+          padding-bottom: 12px;
+        }
+        .find-job-item {
+          box-shadow: 0 0 10px 0 rgba(231, 231, 231, 0.5);
+          background-color: $color-white;
+          padding: 12px 12px;
+          border: none;
+          width: 336px;
+          margin: 0 12px 0 0;
+          @include fontStyle($color-lightGray,ProximaNova,14px,0.3px,normal,1.71);
+          @media screen and (max-width: 1280px) {
+            width: 320px;
+          }
+          @media screen and (max-width: 1023px) {
+            width: 260px;
+          }
+          @media screen and (max-width: 900px) {
+            width: 180px;
+          }
+          @media screen and (max-width: 700px) {
+            margin-bottom: 24px;
+            margin-right: 0;
+          }
+        }
+        .find-job-btn {
+          background-color: $color-lightBlue;
+          border: none;
+          padding: 12px 32px;
+          @include fontStyle($color-white,ProximaNova,16px,0.3px,600,1.5);
+          @media screen and (max-width: 1280px) {
+            margin-top: 24px;
+          }
+        }
+      }
+      .bullets-wrapper {
+        text-align: center;
+        padding-bottom: 41px;
+        .bulletItem {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          transform: rotate(-315deg);
+          border: solid 1px $color-white;
+          margin: 0 7px;
+          &.active {
+            background-color: $color-white;
+          }
+        }
+      }
+      .avatarImg-link {
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-decoration: none;
+        line-height: 0;
+        @media screen and (max-width: 700px) {
+          width: 40px;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .linkdin-container {
+    background-color: $color-darkerBlue;
+    &:after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+    .linkdin-content-wrapper {
+      width: 80%;
+      margin: 0 auto;
+      .left-side-content-wrapper {
+        float: left;
+        padding: 16px 0 22px 0;
+        .left-side-header,.left-side-text {
+          margin: 0;
+          @include fontStyle($color-white,ProximaNova,24px,normal,normal,normal);
+        }
+        .left-side-header {
+          font-weight: bold;
+          line-height: 2;
+
+        }
+        .left-side-text {
+          font-size: 17px;
+        }
+      }
+      .linkdin-btn {
+        float: right;
+        text-decoration: none;
+        background-color: $color-white;
+        padding: 12px 0;
+        text-align: center;
+        width: 224px;
+        margin: 34px 0;
+        @include fontStyle($color-darkBlue,ProximaNova,16px,0.3px,normal,1.25);
+        @media screen and (max-width: 700px) {
+          display: inline-block;
+          float: none;
+        }
+      }
+    }
+  }
+}

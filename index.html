@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Exercise</title>
+  <link rel="stylesheet" href="src/sass/normalize.css">
+  <link rel="stylesheet" href="src/sass/style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logoLink">
+      <img src="assets/logo.svg" alt="תמונת לוגו">
+    </a>
+    <nav>
+      <section class="nav-list-wrapper">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-item-link">Discover Hilton</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item-link">Our Brands</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item-link">University</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item-link">Military</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item-link">Areas of Talent</a>
+          </li>
+        </ul>
+      </section>
+      <section class="func-btns-wrapper">
+        <ul class="func-btns-list">
+          <li class="func-btns-item">
+            <img src="assets/avatar.svg" alt="תמונת משתמש">
+            <a href="#" class="func-btn">Sign In</a>
+          </li>
+          <li class="func-btns-item">
+            <img src="assets/suitCase.svg" alt="תמונת אייקון של מזוודה">
+            <a href="#" class="func-btn">Saved Jobs</a>
+          </li>
+          <li class="func-btns-item">
+            <img src="assets/zoomGlass.svg" alt="תמונת אייקון של זכוכית מגדלת">
+            <button class="func-btn search">Search Jobs</button>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+  </header>
+
+  <section class="main-content-wrapper">
+    <section class="search-field-container">
+      <section class="closeBtn-wrapper">
+        <button class="closeBtn">X</button>
+      </section>
+      <section class="search-field-wrapper">
+        <input type="text" class="search-field-job" placeholder="Enter Job Title or Location">
+        <section class="suggestion-list-wrapper">
+          <ul class="suggestion-list">
+            <li class="suggestion-item disable">Job Categories</li>
+            <li class="suggestion-item">Business Development</li>
+            <li class="suggestion-item">Engineering</li>
+            <li class="suggestion-item">Information Technology</li>
+            <li class="suggestion-item">Sales</li>
+            <li class="suggestion-item">Marketing manager</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+    <div class="fadeBg"></div>
+    <section class="first-floor-wrapper">
+      <img src="assets/image-2.png"
+           srcset="assets/image-2@2x.png"
+           class="first-floor-img" alt="first section background image">
+      <section class="content-wrapper">
+        <section class="first-floor-content">
+          <h2 class="first-header floor-header">Share your travel</h2>
+          <h2 class="second-header floor-header">experience with us</h2>
+          <section class="find-job-wrapper">
+            <input class="job-title find-job-item" type="text" placeholder="Keyword, Job Title or Job ID">
+            <input class="place-name find-job-item" type="text" placeholder="Country, State or City">
+            <button class="find-job-btn">Find Jobs</button>
+          </section>
+          <div class="bullets-wrapper">
+            <span class="bulletItem active"></span>
+            <span class="bulletItem"></span>
+            <span class="bulletItem"></span>
+            <span class="bulletItem"></span>
+          </div>
+          <a href="#" class="avatarImg-link">
+            <img src="assets/blueAvatar.svg" alt="avatar image icon">
+          </a>
+        </section>
+      </section>
+      <section class="linkdin-container">
+        <section class="linkdin-content-wrapper">
+          <section class="left-side-content-wrapper">
+            <h4 class="left-side-header">Get Personalized Job Recommendations</h4>
+            <p class="left-side-text">Import your profile to find opportunities tailored for your talents</p>
+          </section>
+          <a href="https://www.linkedin.com/" class="linkdin-btn" target="_blank">Connect with <strong>LinkedIn</strong></a>
+        </section>
+      </section>
+    </section>
+    <section class="second-floor-wrapper">
+      <h3 class="second-floor-header">team member stories</h3>
+      <img src="assets/bitmap-copy-3.png"
+           srcset="assets/bitmap-copy-3@2x.png 2x,assets/bitmap-copy-3@3x.png 3x"
+           class="second-floor-img" alt="second section background image">
+      <section class="testimonial-wrapper">
+        <button class="arrows right-arrow"><span>&rarr;</span></button>
+        <section class="person-wrapper">
+          <img src="assets/bitmap-copy-4.png"
+               srcset="assets/bitmap-copy-4@2x.png 2x,assets/bitmap-copy-4@3x.png 3x"
+               class="person-img" alt="person image">
+          <section class="person-desc-container">
+            <h4 class="person-name">Kate Allison</h4>
+            <h6 class="person-job">Revenue Manager at Conrad Bali</h6>
+          </section>
+        </section>
+        <section class="desc-wrapper">
+          <p class="desc-text">
+            “People will most likely forget what you said, forget what you did, but people will never forget how you made them feel.”
+          </p>
+        </section>
+        <button class="arrows left-arrow"><span>&larr;</span></button>
+        <div class="bullets-wrapper">
+          <span class="bulletItem active"></span>
+          <span class="bulletItem"></span>
+          <span class="bulletItem"></span>
+          <span class="bulletItem"></span>
+        </div>
+      </section>
+    </section>
+  </section>
+
+  <script src="dist/bundle.js"></script>
+</body>
+</html>

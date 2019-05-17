@@ -1,0 +1,124 @@
+
+.third-floor-wrapper {
+  margin: 120px 0;
+  @media screen and (max-width: 700px) {
+    margin: 24px 0 0;
+  }
+  .third-floor-header {
+    text-align: center;
+    margin-bottom: 40px;
+    @include fontStyle($color-darkGray,ProximaNova,32px,0.5px,900,normal);
+  }
+  .element-wrapper {
+    text-align: center;
+    .element-item {
+      display: inline-block;
+      position: relative;
+      margin-left: 14px;
+      margin-right: 14px;
+      width: 408px;
+      overflow: hidden;
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      &:hover {
+        .content-element-wrapper {
+          top: 0;
+        }
+        .gradient-element,.element-text-wrapper {
+          bottom: -100%;
+        }
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+        @media screen and (max-width: 1280px) {
+          margin-top: 28px;
+        }
+        @media screen and (max-width: 700px) {
+          margin-top: 0;
+        }
+      }
+      .element-img {
+        width: 100%;
+      }
+      .element-text-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 1;
+        margin-bottom: 34px;
+        transition: bottom 0.5s ease-in-out;
+        .element-header {
+          text-align: center;
+          margin-bottom: 16px;
+          @include fontStyle($color-white,ProximaNova,20px,-0.2px,bold,normal);
+          span {
+            font-size: 18px;
+            font-weight: 300;
+          }
+        }
+      }
+      .gradient-element {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 274px;
+        width: 100%;
+        transform: rotate(-180deg);
+        background-image: linear-gradient(to bottom, $color-black, rgba(0, 0, 0, 0));
+        transition: bottom 0.5s ease-in-out;
+      }
+      .content-element-wrapper {
+        height: 100%;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        width: 100%;
+        z-index: 2;
+        transition: top 0.5s ease-in-out;
+        .content-container {
+          position: relative;
+          height: 100%;
+          .content-element {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            color: $color-white;
+            width: 60%;
+            .content-element-header {
+              text-align: center;
+              margin-bottom: 15px;
+              @include fontStyle($color-white,ProximaNova,20px,-0.2px,bold,normal);
+            }
+            .content-element-text {
+              text-align: center;
+              margin: 44px 0 40px 0;
+              @include fontStyle($color-white,ProximaNova,16px,normal,normal,1.5);
+            }
+            .content-element-btn {
+              background-color: transparent;
+              padding: 10px 35px;
+              border: 1px solid $color-white;
+              text-align: center;
+              cursor: pointer;
+              @include fontStyle($color-white,ProximaNova,16px,normal,600,1.5);
+              &:hover {
+                background-color: $color-white;
+                color: $color-black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

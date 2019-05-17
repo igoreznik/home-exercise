@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'SimpleJoys';
+  src:url('./simplejoys.woff');
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src:url('./Proxima Nova Alt Regular-webfont.woff');
+}
+/*-------------------------------------------------------------------------*/
+@import "base/reset";
+@import "base/mixin";
+@import "base/colors";
+@import "components/head";
+@import "components/searchForm";
+@import "components/content";
+

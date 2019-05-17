@@ -1,0 +1,128 @@
+/*----------------------Head section style-----------------------------------*/
+header {
+  background-color: $color-white;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  .logoLink {
+    float: left;
+    padding: 21px 65px 32px 88px;
+    @media screen and (max-width: 900px) {
+      padding: 21px 50px 32px 50px;
+    }
+    @media screen and (max-width: 700px) {
+      width: 60px;
+      padding: 12px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  nav {
+    width: 100%;
+    padding: 33px 0 0;
+    &:after {
+      display: table;
+      clear: both;
+      content: "";
+    }
+    .nav-list-wrapper {
+      float: left;
+      .nav-list {
+        margin: 0;
+        padding: 0;
+        &:after {
+          display: table;
+          clear: both;
+          content: "";
+        }
+        .nav-item {
+          margin: 0 21px;
+          text-align: center;
+          float: left;
+          list-style: none;
+          @media screen and (max-width: 900px) {
+            margin: 0 14px;
+          }
+          @media screen and (max-width: 700px) {
+            margin: 14px 14px 7px;
+          }
+          .nav-item-link {
+            display: inline-block;
+            font-family: ProximaNova;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: $color-darkGray;
+            text-decoration: none;
+            &:hover {
+              color: $color-lightBlue;
+            }
+          }
+        }
+      }
+    }
+    .func-btns-wrapper {
+      float: right;
+      padding-right: 82px;
+      @media screen and (max-width: 1280px) {
+        float: left;
+        padding-right: 0;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+      @media screen and (max-width: 700px) {
+        float: none;
+        padding-right: 0;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+      }
+      .func-btns-list {
+        padding: 0;
+        margin: 0;
+        &:after {
+          display: table;
+          clear: both;
+          content: "";
+        }
+        .func-btns-item {
+          margin: 0 12px;
+          float: left;
+          list-style: none;
+          text-align: center;
+          @media screen and (max-width: 700px) {
+            float: none;
+            display: inline-block;
+          }
+          img {
+            display: inline-block;
+            max-width: 100%;
+            vertical-align: middle;
+          }
+          .func-btn {
+            display: inline-block;
+            text-decoration: none;
+            vertical-align: middle;
+            padding-left: 7px;
+            @include fontStyle($color-LightBlack,ProximaNova,14px,0.3px,300,1.71);
+            &.search {
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+              padding-right: 0;
+            }
+            &:hover {
+              color: $color-lightBlue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
