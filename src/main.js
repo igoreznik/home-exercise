@@ -1,5 +1,5 @@
 import url from './sass/style.css';
-import './sass/simplejoys.woff';
+import './sass/simple joys.woff';
 import './sass/Proxima Nova Alt Regular-webfont.woff';
 (function() {
   const searchBtn = document.querySelector('.func-btn.search');
