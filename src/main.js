@@ -56,6 +56,7 @@ import './sass/Proxima Nova Alt Regular-webfont.woff';
   closeBtn.addEventListener('click', () => {
     document.querySelector('.search-field-container').classList.remove('showField');
     document.querySelector('.suggestion-list-wrapper').classList.remove('showSuggestionList');
+    document.querySelector('.fadeBg').classList.remove('showFadeBg');
     searchFieldJob.value = '';
   });
 
